@@ -1,24 +1,39 @@
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    background: #343a40;
-    color: #fff;
 }
 
 .chat-container {
     width: 100%;
-    max-width: 600px;
-    height: 80vh;
-    background: #1e1e1e;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    max-width: 800px;
+    height: 90vh;
     display: flex;
     flex-direction: column;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+}
+
+.chat-header {
+    background-color: #444;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #555;
+    color: #fff;
+}
+
+.chat-header h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .chat-box {
@@ -28,27 +43,27 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background: #121212;
+    background-color: #000;
 }
 
 .message {
     padding: 10px 15px;
     border-radius: 15px;
-    max-width: 80%;
+    max-width: 75%;
     word-wrap: break-word;
     display: inline-block;
     line-height: 1.5;
 }
 
 .bot-message {
-    background: #2b2b2b;
+    background-color: #555;
     align-self: flex-start;
     border-radius: 15px 15px 15px 0;
-    color: #d1d1d1;
+    color: #fff;
 }
 
 .user-message {
-    background: #007bff;
+    background-color: #007bff;
     color: white;
     align-self: flex-end;
     border-radius: 15px 15px 0 15px;
@@ -57,19 +72,19 @@ body {
 .input-container {
     display: flex;
     padding: 10px;
-    background: #2b2b2b;
-    border-top: 1px solid #444;
+    background-color: #444;
+    border-top: 1px solid #555;
 }
 
 input[type="text"] {
     flex-grow: 1;
     padding: 10px 15px;
-    border: 1px solid #444;
+    border: 1px solid #555;
     border-radius: 20px;
     margin-right: 10px;
     font-size: 16px;
     outline: none;
-    background: #121212;
+    background-color: #333;
     color: #fff;
 }
 
@@ -81,12 +96,12 @@ button {
     padding: 10px 15px;
     border: none;
     border-radius: 20px;
-    background: #007bff;
+    background-color: #007bff;
     color: white;
     cursor: pointer;
     font-size: 16px;
 }
 
 button:hover {
-    background: #0056b3;
+    background-color: #0056b3;
 }
